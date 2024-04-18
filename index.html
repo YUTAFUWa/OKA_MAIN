@@ -19,7 +19,7 @@
   <!-- ↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓   header   ↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓ -->
   <header>
 
-  <nav class="navbar navbar-expand-lg">
+  <nav class="navbar navbar-expand-lg fixed-top">
     <div class="container">
       <a class="navbar-brand my_navbar_brand">
         <img class="img-fluid navbar_brand_logo" src="image/logo.jpg" alt="サイトアイコン"><span>岡総合外壁工</span>
@@ -58,6 +58,14 @@
             <a class="nav-link my_nav_link my-2" href="#contact">お問い合せ</a>
           </li>
 
+          <li class="nav-item px-2">
+            <a class="nav-link my_nav_link my-2" href="pdf/overview.pdf">概説書</a>
+          </li>
+
+          <li class="nav-item px-2">
+            <a class="nav-link my_nav_link my-2" href="pdf/overview.pdf"><img id="insta-link" src="image/Instagram_Glyph_Gradient.png" alt="instagram"></a>
+          </li>
+
         </ul>
       </div>
     </div>
@@ -70,14 +78,16 @@
   <!-- ↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓ main ↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓ -->
   <main>
     <div id="top">
+    <div class="container">
       <div id="top-photo">
         <img src="image/main_photo.jpg" alt="代表岡 高所作業中">
       </div>
     </div>
+  </div>
 
 
     <!-- ↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓ 事業内容 ↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓ -->
-    <section class="ag" id="service-operations">
+    <section id="service-operations">
       <div class="container">
 
         <h2 class="title">Service</h2>
@@ -99,19 +109,19 @@
           <div class="service-item" href="painting_service.html">
             <div><img src="image/painting_finish.jpg" alt="塗装工事"></div>
             <p class="service-name">塗装</p>
-            <p class="service-info">外壁や竪樋など塗装し、綺麗な外観になります。</p>
+            <p class="service-info">外壁など塗装し、綺麗な外観になります。</p>
           </div>
 
           <div class="service-item" href="downspout_service.html">
             <div><img src="image/downpipe.JPG" alt="竪樋工事"></div>
             <p class="service-name">竪樋</p>
-            <p class="service-info"></p>
+            <p class="service-info">竪樋の修理や、塗装して綺麗な外観にするなどもできます。</p>
           </div>
 
           <div class="service-item" href="exterior-wall-inspection_service.html">
             <div><img src="image/exterior-wall-inspection.JPG" alt="外壁調査"></div>
             <p class="service-name">外壁調査</p>
-            <p class="service-info"></p>
+            <p class="service-info">建物の劣化状況を調査し、タイルやシーリングなど全体の劣化状況を調査いたします。</p>
           </div>
 
         </div>
@@ -121,7 +131,7 @@
 
 
     <!-- ↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓ 安全管理 ↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓ -->
-    <section class="bg" id="safety">
+    <section id="safety">
       <div class="container">
 
         <h2 class="title">Safety</h2>
@@ -139,7 +149,7 @@
 
 
           <div class="safety-item">
-            <p class="safety-img"><img src="" alt="下降器"></p>
+            <p class="safety-img"><img src="image/kakouki_sample.jpg" alt="下降器"></p>
             <div class="safety-body">
               <h3 class="safety-name">下降器</h3>
               <p class="safety-text">
@@ -148,7 +158,7 @@
           </div>
 
           <div class="safety-item">
-            <p class="safety-img"><img src="" alt="アサップ"></p>
+            <p class="safety-img"><img src="image/asap_sample.png" alt="アサップ"></p>
             <div class="safety-body">
               <h3 class="safety-name">アサップ</h3>
               <p class="safety-text">
@@ -180,7 +190,7 @@
 
 
     <!-- ↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓ 作業写真集 ↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓ -->
-    <section class="ag" id="photos">
+    <section id="photos">
       <div class="container">
 
         <h2 class="title">Photos</h2>
@@ -202,7 +212,7 @@
 
 
     <!-- ↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓ 代表挨拶 ↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓ -->
-    <section class="bg" id="message">
+    <section id="message">
 
       <div class="container">
         <h2 class="title">Message</h2>
@@ -217,7 +227,7 @@
 
 
     <!-- ↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓ お問合せ ↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓ -->
-    <section class="ag" id="contact">
+    <section id="contact">
 
       <div class="container">
 

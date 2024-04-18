@@ -7,7 +7,7 @@ body {
   font-size: 15px;
   letter-spacing: .05em;
   color: #333;
-  margin: 15px;
+  padding-top: 56px;
 }
 
 
@@ -22,22 +22,20 @@ img{
   height: auto;
 }
 
+
 .title{
-  color: #333;
+  font-family: 'Lora', serif;
+  padding-bottom: 40px;
+  padding-top: 30px;
+  color: #000000;
   text-align: center;
-  font-size: 45px;
+  font-size: 35px;
   font-weight: bold;
   line-height: 1;
   letter-spacing: .05em;
-  color: #333;
-  border-radius: 8px;
-  background: radial-gradient(circle, #ffffff, #000000);
 }
 
 
-section{
-  padding: 50px 20px;
-}
 
 section:nth-of-type(odd){
   background-color: #f5f5f5;
@@ -50,6 +48,20 @@ p{
   font-size: 14px;
 }
 
+section{
+  padding-top: 50px;
+  padding-bottom: 20px;
+}
+
+.fixed-top{
+  z-index: 1000;
+  background-color: #ffffff;
+  opacity: 0.9;
+  height: 56px;
+}
+
+
+
   /* ↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓ ナビゲーションメニュー ↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓ */
 
 .navbar_brand_logo {
@@ -61,7 +73,7 @@ p{
 
 .my_navbar_brand,
 .my_nav_link {
-  font-size: 16px;
+  font-size: 20px !important;
   font-family: 'Lora', serif;
   color: #000000 !important;
 }
@@ -71,6 +83,7 @@ p{
   border: none !important;
   height: 40px;
   width: 40px;
+  
 }
 
 #hamburger_btn_check:checked~.hamburger_btn .btn_close {
@@ -81,7 +94,14 @@ p{
   display: none;
 }
 
+.btn_open{
+  height: 30px;
+  width: 30px;
+}
+
 .btn_close {
+  height: 30px;
+  width: 30px;
   display: none;
 }
 
@@ -90,6 +110,20 @@ p{
   display: none;
 }
 
+#insta-link {
+  margin: 0 auto;
+  width: 40px;
+  height: 40px;
+}
+
+.nav-item{
+  display: flex;
+  align-items: center;
+}
+
+.nav-link{
+  font-size: 15px !important;
+}
 
   /* ↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓ 安全管理 ↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓ */
 
@@ -119,17 +153,6 @@ p{
 
 
 /* ↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓ PC top写真 ↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓ */
-#top {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-}
-
-#top-photo {
-  position: centere;
-  width: 100%;
-}
 
 #top-photo img {
   object-fit:cover;
@@ -142,27 +165,28 @@ p{
 
   .service-list{
     display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
+    justify-content: space-between;
+    /* flex-wrap: wrap; */
+    /* ⇧ flex-wrapで配置を調整するか、colで調整するか */
   }
 
   .service-item{
     width: 31.74603%;
     margin: 40px 10px;
-    /* margin-right: 1.58730%;
-    margin-bottom: 40px; */
     color: #333;
     border-radius: 20px;
 
-    box-shadow:
-    0 20px 0 -10px rgb(198, 224, 231),
-    0 40px 0 -20px rgb(105, 171, 209),
-    0 60px 0 -30px rgb(27, 115, 165);
+    /* box-shadow:
+    0 20px 0 -10px rgb(185, 185, 190),
+    0 40px 0 -20px rgb(83, 86, 87),
+    0 60px 0 -30px rgb(29, 29, 30); */
 
   }
 
   .service-item img{
+    object-fit:cover;
     border-radius: 15px;
+    height: 200px;
   }
   
   .service-name{
@@ -180,8 +204,8 @@ p{
 
   .safety-list{
     display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
+    justify-content: space-between;
+    /* flex-wrap: wrap; */
   }
 
   .safety-item{
@@ -193,7 +217,9 @@ p{
   }
 
   .safety-item img{
-    border-radius: 20px;
+    object-fit:cover;
+    border-radius: 15px;
+    height: 200px;
   }
 
 
@@ -248,16 +274,27 @@ p{
     list-style-type: none;
   }
 
-  #insta-link {
-    width: 40px;
-    height: auto;
-  }
 
   img {
     width: 100%;
   }
 
-  /* ↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓ header ↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓ */
+  /* ↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓ SP header ↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓ */
+
+  .img-fluid{
+    align-items: center;
+    background-color: #000000;
+  }
+
+
+  .navbar-nav{
+    background-color: #ffffff;
+  }
+
+  .nav-item{
+    justify-content: center;
+  }
+
 
   /* ↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓ SP top写真 ↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓ */
   #top-photo {
@@ -279,9 +316,12 @@ p{
 
   /* ↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓ SP Service ~事業内容~ ↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓ */
 
-  .service-item > img {
+  .service-item img {
     max-width: 100%;
     max-height: 100%;
+    object-fit:cover;
+    border-radius: 15px;
+    height: 200px;
   }
 
   .service-name {
@@ -307,6 +347,12 @@ p{
     border-radius: 8px; /* 角を丸める */
     box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2); /* 浮き出ているような影を追加 */
     padding: 10px; /* 線からの余白を追加 */
+  }
+
+  .safety-item img{
+  object-fit:cover;
+  border-radius: 15px;
+  height: 200px;
   }
 
 

@@ -18,3 +18,10 @@ const thumbs = document.querySelectorAll('.thumb');
       document.getElementById('bigimg').src = this.dataset.image;
     }
   });
+
+
+  $(document).ready(function(){
+    $(".nav-link").on('click', function(){
+      $(".navbar-collapse").collapse('hide');
+    });
+  });
