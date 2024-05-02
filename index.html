@@ -78,11 +78,9 @@
 
   <!-- ↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓ main ↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓ -->
   <main>
-    <div id="top">
-      <div class="container">
-        <div id="top-photo">
-          <img src="image/main_photo.jpg" alt="代表岡 高所作業中">
-        </div>
+    <div class="container">
+      <div id="top-photo">
+        <img src="image/main_photo.jpg" alt="代表岡 高所作業中">
       </div>
     </div>
 
@@ -236,37 +234,25 @@
 
         <h2 class="title">Contact</h2>
 
-        <div class="Form">
+        <table id="contact-list">
+          <tr>
+            <td>TEL</td>
+            <td class="content">000-000-0000</td>
+          </tr>
+          <tr>
+            <td>MAIL</td>
+            <td class="content">oka@sample.jp</td>
+          </tr>
+          <tr>
+            <td>ACSESS</td>
+            <td class="content">立川市</td>
+          </tr>
+        </table>
 
-          <div class="Form-Item">
-            <p class="Form-Item-Label">会社名</p>
-            <input type="text" class="Form-Item-Input" placeholder="例）株式会社外壁工事">
-          </div>
 
-          <div class="Form-Item">
-            <p class="Form-Item-Label"><span class="Form-Item-Label-Required">必須</span>氏名</p>
-            <input type="text" class="Form-Item-Input" placeholder="例）山田太郎">
-          </div>
+      </div>
 
-          <div class="Form-Item">
-            <p class="Form-Item-Label"><span class="Form-Item-Label-Required">必須</span>電話番号</p>
-            <input type="text" class="Form-Item-Input" placeholder="例）000-0000-0000">
-          </div>
-
-          <div class="Form-Item">
-            <p class="Form-Item-Label"><span class="Form-Item-Label-Required">必須</span>メールアドレス</p>
-            <input type="email" class="Form-Item-Input" placeholder="例）example@gmail.com">
-          </div>
-
-          <div class="Form-Item">
-            <p class="Form-Item-Label isMsg"><span class="Form-Item-Label-Required">必須</span>お問い合わせ内容</p>
-            <textarea class="Form-Item-Textarea"></textarea>
-          </div>
-
-          <input type="submit" class="Form-Btn" value="送信する">
-
-        </div>
-
+      </div>
       </div>
 
     </section>

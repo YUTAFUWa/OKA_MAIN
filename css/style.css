@@ -22,7 +22,6 @@ img{
   height: auto;
 }
 
-
 .title{
   font-family: 'Lora', serif;
   padding-bottom: 40px;
@@ -125,18 +124,32 @@ section{
   font-size: 15px !important;
 }
 
-  /* ↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓ 安全管理 ↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓ */
-
   /* ↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓ 作業写真 ↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓ */
 
   #photos{
     padding: 15px 10px;
   }
 
+  /* ↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓ お問合せ ↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓ */
+
+  #contact{
+    padding-bottom: 70px;
+  }
+
+  #contact-list{
+    margin: auto;
+  }
+
+  .content{
+    padding-left: 20px;
+  }
+
+
   /* ↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓ page-top ↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓ */
 .page-top{
   text-align: center;
 }
+
 
   /* ↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓ footer ↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓ */
 .footer{
@@ -314,8 +327,6 @@ section{
     width: 100%;
     object-fit: cover;
   }
-
-  /* ↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓ SP ハンバーガーメニュー ↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓ */  
 
   /* ↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓ SP Service ~事業内容~ ↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓ */
 
